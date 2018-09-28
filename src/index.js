@@ -10,9 +10,9 @@ class Loki extends Component {
     nextLabel: "Next",
     finishLabel: "Finish"
   };
-
+  
   state = {
-    currentStep: 1,
+    currentStep: this.props.startAt || 1,
     stepsDone: [],
     complete: false
   };
